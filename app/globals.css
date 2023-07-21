@@ -4,22 +4,43 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --gray0: #737373;
+  --gray1: #262626;
+  --gray2: #171717;
+  --gray3: #0e0e0e;
+  --blue: #1792e3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-gray1 {
+  background-color: var(--gray1);
+}
+.bg-gray2 {
+  background-color: var(--gray2);
+}
+.bg-gray3 {
+  background-color: var(--gray3);
 }
 
+.col-gray0{
+  color: var(--gray0);
+}
+.col-gray1{
+  color: var(--gray1);
+}
+.col-gray2{
+  color: var(--gray2);
+}
+.col-gray3{
+  color: var(--gray3);
+}
+
+section{
+  min-height: calc(100vh - 64px);
+}
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: rgb(var(--background-rgb)); */
 }
 
-.createhub{
-  color: rgb(23 ,146, 227);
+#createhub{
+  color: var(--blue);
 }

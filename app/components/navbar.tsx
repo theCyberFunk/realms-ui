@@ -23,7 +23,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray1">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -56,7 +56,7 @@ export default function Navbar() {
                       type="text"
                       placeholder="Organizations"
                       onChange={handleChange}
-                      className="p-2 border border-gray-300 rounded-md focus:outline-none"
+                      className="bg-gray2 p-2 rounded-md focus:outline-none"
                     />
                   </form>
                 </div>
@@ -81,7 +81,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button className="createhub">
+                <button id="createhub">
                     <span>+ Create Hub</span>
                 </button>
                 <button
